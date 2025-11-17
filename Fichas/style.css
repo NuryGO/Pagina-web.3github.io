@@ -1,0 +1,356 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Inicio Fondo*/
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container::before {
+  content:'';
+  background: #000000;
+  background-color: #000000;
+  background-image: url(../img/Bandera.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.35;
+}
+
+.nav-main{
+    position: absolute;
+}
+/* Final Fondo*/
+
+/* Inicio titulo*/
+h1{
+    -webkit-text-stroke-width: 1px; /* Grosor del borde */
+    -webkit-text-stroke-color: black; /* Color del borde */
+    font-size: 55px;
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    margin-top: 20px;
+}
+/* Final titulo*/
+
+/* Inicio menu*/
+.menu{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: left;
+    display: block;
+    text-align: center;
+    margin-top: 500px;
+    margin-left: -280px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+}   
+
+nav ul li a{
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    width: 130px; /* Ancho del menú */
+    height: 45px;
+    background-color: rgba(251, 255, 6, 0.541); /* Color de fondo */
+    border: 2px solid #000; /* 🔹 Borde visible */
+    border-radius: 15px; /* 🔹 Bordes redondeados */
+}
+  
+nav li {
+    border-bottom: 1px solid #ddd; /* Línea separadora */
+    border-radius: 5px;
+}
+  
+nav li:last-child {
+    border-bottom: black; /* Sin borde en el último elemento */
+}
+
+nav a {
+    display: block; /* Para que ocupe todo el ancho y sea clicable */
+    padding: 10px 15px; /* Espaciado interno */
+    text-decoration: none; /* Elimina el subrayado */
+    color: #333; /* Color del texto */
+    text-align: none;
+}
+
+nav a:hover {
+    background-color: #ffe6008a; /* Color de fondo al pasar el mouse */
+    color: #ff0000; /* Color del texto al pasar el mouse */
+    border-color: rgba(0, 110, 255, 0.644);
+  }
+/* final menu*/
+
+/* Inicio Mapa*/
+.imagen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    overflow: visible;
+}
+
+.imagen img{
+    position: absolute;
+    transition: .3s ease;
+    cursor: pointer;
+    position: absolute;
+}
+
+.img1{
+    width: 50%;
+    height: auto;
+    margin-left: 7px;
+    margin-top: 520px;
+}
+
+.img6{
+    width: 13%;
+    height: auto;
+    margin-left: -360px;
+    margin-top: 230px;
+}
+/* Final Mapa*/
+
+/* Inicio botones*/
+.botones{
+    position: absolute;
+    background: none;
+    font-weight: bold;
+    z-index: 10;
+    transition: 0.3s ease;
+    display: flex;
+}
+
+li {
+    list-style: none;
+}
+
+.botones a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: #000000; /* Color del texto */
+    transition: transform 0.3s ease;
+}
+
+.botones :hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.15);
+}
+
+/* Region Caribe */
+.imge1 {
+    position: absolute;
+    margin-top: -185px;
+    margin-left: -30px;
+    height: auto;
+    width: 50px;
+}
+
+.imge2 {
+    position: absolute;
+    margin-top: -160px;
+    margin-left: -90px;
+    height: auto;
+    width: 50px;
+}
+
+.imge3 {
+    position: absolute;
+    margin-top: -110px;
+    left: -55px;
+    height: auto;
+    width: 50px;
+}
+
+.imge19 {
+    position: absolute;
+    margin-top: -130px;
+    left: -105px;
+    height: auto;
+    width: 50px;   
+}
+
+/* Region Andina */
+.imge4 {
+    position: absolute;
+    margin-top: -70px;
+    margin-left: -30px;
+    height: auto;
+    width: 50px;
+}
+
+.imge5 {
+    position: absolute;
+    margin-top: -55px;
+    margin-left: -100px;
+    height: auto;
+    width: 50px;
+}
+
+.imge6 {
+    position: absolute;
+    margin-top: -30px;
+    margin-left: -65px;
+    height: auto;
+    width: 50px;
+}
+
+.imge20 {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -80px;
+    height: auto;
+    width: 50px;
+}
+
+
+/* Region Pacifico */
+.imge7 {
+    position: absolute;
+    margin-top: -70px;
+    margin-left: -160px;
+    height: auto;
+    width: 50px;
+}
+
+.imge8 {
+    position: absolute;
+    margin-top: -10px;
+    margin-left: -140px;
+    height: auto;
+    width: 50px;
+}
+
+.imge9 {
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -140px;
+    height: auto;
+    width: 50px;
+}
+
+.imge21 {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: -160px;
+    height: auto;
+    width: 50px;
+}
+
+
+/* Region Amazonia */
+.imge10 {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 30px;
+    height: auto;
+    width: 50px;
+}
+
+.imge11 {
+    position: absolute;
+    margin-top: 120px;
+    margin-left: -80px;
+    height: auto;
+    width: 50px;
+}
+
+.imge12 {
+    position: absolute;
+    margin-top: 120px;
+    margin-left: 20px;
+    height: auto;
+    width: 50px;
+}
+
+.imge22 {
+    position: absolute;
+    margin-top: 160px;
+    margin-left: 20px;
+    height: auto;
+    width: 50px;
+}
+
+/* Region Orinoquía */
+.imge13 {
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 40px;
+    height: auto;
+    width: 50px;
+}
+
+.imge14 {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: -20px;
+    height: auto;
+    width: 50px;
+}
+
+.imge15 {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 90px;
+    height: auto;
+    width: 45px;
+}
+
+.imge23 {
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 40px;
+    height: auto;
+    width: 45px;
+}
+
+/* Region Insular */
+.imge16 {
+    position: absolute;
+    margin-top: -180px;
+    margin-left: -230px;
+    height: auto;
+    width: 50px;
+}
+
+.imge17 {
+    position: absolute;
+    margin-top: -110px;
+    margin-left: -240px;
+    height: auto;
+    width: 50px;
+}
+
+.imge18 {
+    position: absolute;
+    margin-top: -170px;
+    margin-left: -170px;
+    height: auto;
+    width: 50px;
+}
+
+.imge24 {
+    position: absolute;
+    margin-top: -140px;
+    margin-left: -180px;
+    height: auto;
+    width: 50px;
+}
+/* Final botones*/
