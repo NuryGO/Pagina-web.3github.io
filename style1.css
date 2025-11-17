@@ -1,0 +1,190 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Inicio Fondo*/
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container::before {
+  content:'';
+  background: #000000;
+  background-color: #000000;
+  background-image: url(img/colombia.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0.25;
+}
+
+.nav-main{
+    position: absolute;
+}
+/* Final Fondo*/
+
+/* Inicio titulo*/
+h1{
+    -webkit-text-stroke-width: 1px; /* Grosor del borde */
+    -webkit-text-stroke-color: black; /* Color del borde */
+    font-size: 70px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+}
+/* Final titulo*/
+
+/* Inicio menu*/
+h2{
+    color: red;
+    -webkit-text-stroke-width: 1px; /* Grosor del borde */
+    -webkit-text-stroke-color: black; /* Color del borde */
+    font-size: 50px; /* Tamaño de la fuente para que se vea el borde */
+    font-family: sans-serif;
+    background-size: 100% 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    float: left;
+    text-align: center;
+    margin-left: 190px;
+    margin-top: 20px;
+}
+
+.menu{
+    background-size: 100% 110%;
+    display: block;
+    background-repeat: no-repeat;
+    float: left;
+    text-align: center;
+    margin-top: 65px;
+    margin-left: -175px;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+}   
+
+nav ul li {
+  position: relative; /* ✅ Para que el submenu se posicione respecto a su li */
+}
+
+nav ul li a{
+    font-size: 25px;
+    text-align: center;
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    width: 250px; /* Ancho del menú */
+    background-color: none; /* Color de fondo */
+}
+  
+nav li {
+    border-bottom: 1px solid #ddd; /* Línea separadora */
+    border-radius: 5px;
+}
+  
+nav li:last-child {
+    border-bottom: none; /* Sin borde en el último elemento */
+}
+
+nav a {
+    display: block; /* Para que ocupe todo el ancho y sea clicable */
+    padding: 8px 15px; /* Espaciado interno */
+    text-decoration: none; /* Elimina el subrayado */
+    color: #333; /* Color del texto */
+    text-align: none;
+}
+
+nav a:hover {
+    background-color: #ddd; /* Color de fondo al pasar el mouse */
+    color: #000; /* Color del texto al pasar el mouse */
+  }
+/* final menu*/
+
+/* Submenu oculto por defecto */
+.submenu {
+  display: none;
+  position: absolute;
+  top: 0; /* debajo del li padre */
+  left: 100%;
+  background-color: none;
+  width: 200px;
+  z-index: 1000;
+}
+
+/* Mostrar submenu al hacer hover en el li padre */
+.menu li:hover .submenu {
+  display: block;
+}
+
+.submenu li a {
+  padding: 10px 15px;
+  display: block;
+  background-color: none;
+  text-decoration: none;
+  color: #000;
+}
+
+.submenu li a:hover {
+  background-color: #ccc;
+}
+
+
+
+/* Inicio Autores*/
+h3{
+    color: red;
+    -webkit-text-stroke-width: 1px; /* Grosor del borde */
+    -webkit-text-stroke-color: black; /* Color del borde */
+    font-size: 50px; /* Tamaño de la fuente para que se vea el borde */
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    display: flex;
+    float: left;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 250px;
+    margin-left: -200px;
+}
+
+.texto{
+    font-family: sans-serif;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    list-style: none;
+    text-decoration: none;
+    margin-top: 300px;
+    font-size: 20px;
+    margin-left: -180px;
+}
+/* Final Autores*/
+
+/* Inicio Muñeco*/
+.img1{
+    width: 32%;
+    height: auto;
+    display: block;
+    position: absolute;
+    align-items: center;
+    margin-left: 800px;
+    margin-top: 10px;
+}
+/* Final Muñeco*/
+
+@media (max-width:790px){
+    .container {
+        display: none;
+    }
+}
